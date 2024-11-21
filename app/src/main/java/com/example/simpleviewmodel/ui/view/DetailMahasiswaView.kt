@@ -34,7 +34,7 @@ fun DetailMahasiswaView(
         ElevatedButton(
             onClick = {onBackButton()}
         ) {
-
+            Text("Kembali")
         }
         listDataMhs.forEach { data->
             DetailMhs(judul = data.first,
