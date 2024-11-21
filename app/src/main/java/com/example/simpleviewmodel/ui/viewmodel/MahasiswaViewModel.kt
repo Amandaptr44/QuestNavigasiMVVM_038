@@ -20,6 +20,9 @@ class MahasiswaViewModel: ViewModel() {
             mhs.copy(
                 nama = listData[0],
                 gender = listData[1],
+                nim = listData[2],
+                email = listData[3],
+                noTelepon = listData[4],
                 alamat = listData[2],
             )
         }
