@@ -15,7 +15,8 @@ import com.example.simpleviewmodel.model.Mahasiswa
 @Composable
 fun DetailMahasiswaView(
     dataMhs: Mahasiswa,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onBackButton: () -> Unit
 ){
     val listDataMhs = listOf(
         Pair("Nama", dataMhs.nama),
@@ -47,14 +48,8 @@ fun DetailMahasiswaView(
 fun DetailMhs(
     judul:String,isinya:String
 ) {
-    Column(
-        modifier = Modifier.fillMaxWidth().padding(16.dp),
-    ) {
-
-    }
-
     Row(
-        modifier = Modifier.fillMaxWidth().padding(top = 2.dp)
+        modifier = Modifier.fillMaxWidth().padding(top = 10.dp)
     ) {
         Text(
             text = judul,
