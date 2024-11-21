@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -30,6 +31,11 @@ fun DetailMahasiswaView(
             .fillMaxSize()
             .padding(16.dp)
     ){
+        ElevatedButton(
+            onClick = {onBackButton()}
+        ) {
+
+        }
         listDataMhs.forEach { data->
             DetailMhs(judul = data.first,
                 isinya = data.second)
